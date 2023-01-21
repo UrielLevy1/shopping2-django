@@ -143,6 +143,7 @@ MEDIA_ROOT = BASE_DIR / 'staticfiles/images'
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
+    "https://shopping-site-react.onrender.com",
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
