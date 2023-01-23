@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-e#e@ffr+ej_1hq%li4!w13r0c(k)5p_*j_l8zc)hwvq^17wp!k
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['shopping-site-django.onrender.com']
+ALLOWED_HOSTS = ['shopping-site-django.onrender.com', '*',]
 
 
 # Application definition
@@ -82,8 +82,14 @@ WSGI_APPLICATION = 'shopping.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'shoppingdatabase_h7yd',
+        'USER': 'uriel',
+        'PASSWORD': 'pgFl5E05AzFXOagdIb48wUnWjv9rkUuV',
+        'HOST': 'dpg-cf7bbt4gqg47vk2f6ijg-a.frankfurt-postgres.render.com',       
+        'PORT': '5432',
     }
 }
 
