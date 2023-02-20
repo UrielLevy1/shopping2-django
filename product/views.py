@@ -54,3 +54,11 @@ def product(request, pk):
     elif request.method == 'DELETE': # delete product
         product.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)   
+    
+# @api_view(['GET', 'PUT', 'POST'])
+# def add_product_to_cart(request, pk):
+#     product = Product.objects.get(id=pk)  
+    
+#     """
+#     Add product to cart
+#     """ 
